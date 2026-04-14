@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СтройМост — Строительная компания | Надежность в каждом объекте</title>
+    <meta name="description"
+        content="Строительная компания СтройМост — возведение мостов, зданий и инфраструктурных объектов. Более 15 лет опыта, 200+ сданных проектов.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="#" class="header__logo">
+                <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="20" width="16" height="18" stroke="currentColor" stroke-width="2" />
+                    <rect x="22" y="12" width="16" height="26" stroke="currentColor" stroke-width="2" />
+                    <line x1="0" y1="39" x2="40" y2="39" stroke="currentColor" stroke-width="2" />
+                    <polygon points="10,20 2,20 10,10 18,20" stroke="currentColor" stroke-width="2" fill="none" />
+                    <polygon points="30,12 22,12 30,2 38,12" stroke="currentColor" stroke-width="2" fill="none" />
+                </svg>
+                <span>СТРОЙМОСТ</span>
+            </a>
+            <nav class="header__nav">
+                <a href="#advantages" class="header__link">Преимущества</a>
+                <a href="#bridge" class="header__link">Процесс</a>
+                <a href="#projects" class="header__link">Объекты</a>
+                <a href="#contact" class="header__link">Контакты</a>
+            </nav>
+            <a href="#contact" class="header__cta">Связаться</a>
+            <button class="header__burger" id="burger" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav__overlay" id="mobile-nav-overlay"></div>
+        <div class="mobile-nav__panel">
+            <nav class="mobile-nav__links">
+                <a href="#advantages" class="mobile-nav__link">Преимущества</a>
+                <a href="#bridge" class="mobile-nav__link">Процесс</a>
+                <a href="#projects" class="mobile-nav__link">Объекты</a>
+                <a href="#contact" class="mobile-nav__link">Контакты</a>
+            </nav>
+            <a href="#contact" class="btn btn--primary mobile-nav__cta">Связаться</a>
+        </div>
+    </div>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <p class="hero__tag">СТРОИТЕЛЬНАЯ КОМПАНИЯ</p>
+            <h1 class="hero__title">
+                Создаём <span class="hero__accent">инфраструктуру</span><br>
+                будущего
+            </h1>
+            <p class="hero__subtitle">Проектирование и строительство мостов, зданий и промышленных объектов с 2009 года.
+                Надежность, точность, масштаб.</p>
+            <div class="hero__actions">
+                <a href="#projects" class="btn btn--primary">Наши объекты</a>
+                <a href="#bridge" class="btn btn--outline">Как мы строим</a>
+            </div>
+        </div>
+        <div class="hero__scroll-hint" id="scroll-hint">
+            <span>Листайте вниз</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- ========== ADVANTAGES ========== -->
+    <section class="advantages" id="advantages">
+        <div class="container">
+            <p class="section-tag">ПОЧЕМУ МЫ</p>
+            <h2 class="section-title">Преимущества компании</h2>
+            <div class="advantages__grid">
+                <div class="advantage-card" data-animate>
+                    <div class="advantage-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2" /><text x="24" y="30"
+                                text-anchor="middle" fill="currentColor" font-size="18" font-weight="700">15+</text>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-card__number" data-count="15">0</h3>
+                    <p class="advantage-card__label">Лет на рынке</p>
+                    <p class="advantage-card__desc">Основана в 2009 году. Более полутора десятилетий успешного
+                        строительства объектов любой сложности.</p>
+                </div>
+                <div class="advantage-card" data-animate>
+                    <div class="advantage-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <rect x="4" y="14" width="40" height="30" rx="2" stroke="currentColor" stroke-width="2" />
+                            <line x1="24" y1="4" x2="24" y2="14" stroke="currentColor" stroke-width="2" />
+                            <circle cx="24" cy="4" r="3" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="advantage-card__number" data-count="200">0</h3>
+                    <p class="advantage-card__label">Сданных объектов</p>
+                    <p class="advantage-card__desc">Мосты, жилые комплексы, промышленные сооружения — каждый объект сдан
+                        в срок и на высочайшем уровне.</p>
+                </div>
+                <div class="advantage-card" data-animate>
+                    <div class="advantage-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <path d="M4 44 L24 4 L44 44 Z" stroke="currentColor" stroke-width="2" fill="none" />
+                            <line x1="14" y1="30" x2="34" y2="30" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="advantage-card__number" data-count="50">0</h3>
+                    <p class="advantage-card__label">Мостов построено</p>
+                    <p class="advantage-card__desc">Автомобильные, железнодорожные и пешеходные мосты по всей стране —
+                        наша ключевая специализация.</p>
+                </div>
+                <div class="advantage-card" data-animate>
+                    <div class="advantage-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="16" r="10" stroke="currentColor" stroke-width="2" />
+                            <path d="M8 44c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="currentColor"
+                                stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="advantage-card__number" data-count="1200">0</h3>
+                    <p class="advantage-card__label">Специалистов</p>
+                    <p class="advantage-card__desc">Штат квалифицированных инженеров, архитекторов и строителей.
+                        Экспертиза на каждом этапе проекта.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BRIDGE ANIMATION ========== -->
+    <section class="bridge" id="bridge">
+        <div class="bridge__inner">
+            <div class="bridge__text">
+                <p class="section-tag">НАШ ПРОЦЕСС</p>
+                <h2 class="section-title bridge__title">Строим мосты<br>шаг за шагом</h2>
+                <p class="bridge__phase" id="bridge-phase">Наблюдайте за процессом строительства — просто продолжайте
+                    листать вниз</p>
+            </div>
+            <div class="bridge__canvas">
+                <svg id="bridge-svg" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Water / Ground -->
+                    <rect class="bridge-water" x="0" y="420" width="1000" height="80" fill="#0a1628" />
+                    <line class="bridge-waterline" x1="0" y1="420" x2="1000" y2="420" stroke="#1a3a5c"
+                        stroke-width="1.5" />
+
+                    <!-- Foundation / Pylons -->
+                    <g class="bridge-layer bridge-foundations">
+                        <rect x="180" y="280" width="40" height="140" fill="none" stroke="#D4A843" stroke-width="2.5" />
+                        <rect x="780" y="280" width="40" height="140" fill="none" stroke="#D4A843" stroke-width="2.5" />
+                        <rect x="170" y="400" width="60" height="20" fill="none" stroke="#D4A843" stroke-width="2.5" />
+                        <rect x="770" y="400" width="60" height="20" fill="none" stroke="#D4A843" stroke-width="2.5" />
+                    </g>
+
+                    <!-- Towers -->
+                    <g class="bridge-layer bridge-towers">
+                        <rect x="185" y="120" width="30" height="160" fill="none" stroke="#D4A843" stroke-width="2.5" />
+                        <rect x="785" y="120" width="30" height="160" fill="none" stroke="#D4A843" stroke-width="2.5" />
+                        <!-- Tower tops -->
+                        <polygon points="185,120 200,80 215,120" fill="none" stroke="#D4A843" stroke-width="2.5" />
+                        <polygon points="785,120 800,80 815,120" fill="none" stroke="#D4A843" stroke-width="2.5" />
+                    </g>
+
+                    <!-- Main cables (catenary) -->
+                    <g class="bridge-layer bridge-cables">
+                        <path d="M200,90 Q350,260 500,270 Q650,260 800,90" fill="none" stroke="#D4A843"
+                            stroke-width="3" />
+                        <!-- Approach cables left -->
+                        <path d="M50,350 Q125,220 200,90" fill="none" stroke="#D4A843" stroke-width="2.5" />
+                        <!-- Approach cables right -->
+                        <path d="M800,90 Q875,220 950,350" fill="none" stroke="#D4A843" stroke-width="2.5" />
+                    </g>
+
+                    <!-- Vertical suspenders -->
+                    <g class="bridge-layer bridge-suspenders">
+                        <line x1="250" y1="176" x2="250" y2="310" stroke="#D4A843" stroke-width="1.2" />
+                        <line x1="300" y1="218" x2="300" y2="310" stroke="#D4A843" stroke-width="1.2" />
+                        <line x1="350" y1="248" x2="350" y2="310" stroke="#D4A843" stroke-width="1.2" />
+                        <line x1="400" y1="262" x2="400" y2="310" stroke="#D4A843" stroke-width="1.2" />
+                        <line x1="450" y1="270" x2="450" y2="310" stroke="#D4A843" stroke-width="1.2" />
+                        <line x1="500" y1="272" x2="500" y2="310" stroke="#D4A843" stroke-width="1.2" />
+                        <line x1="550" y1="270" x2="550" y2="310" stroke="#D4A843" stroke-width="1.2" />
+                        <line x1="600" y1="262" x2="600" y2="310" stroke="#D4A843" stroke-width="1.2" />
+                        <line x1="650" y1="248" x2="650" y2="310" stroke="#D4A843" stroke-width="1.2" />
+                        <line x1="700" y1="218" x2="700" y2="310" stroke="#D4A843" stroke-width="1.2" />
+                        <line x1="750" y1="176" x2="750" y2="310" stroke="#D4A843" stroke-width="1.2" />
+                        <!-- Approach suspenders -->
+                        <line x1="100" y1="342" x2="100" y2="350" stroke="#D4A843" stroke-width="1.2" />
+                        <line x1="150" y1="306" x2="150" y2="340" stroke="#D4A843" stroke-width="1.2" />
+                        <line x1="850" y1="306" x2="850" y2="340" stroke="#D4A843" stroke-width="1.2" />
+                        <line x1="900" y1="342" x2="900" y2="350" stroke="#D4A843" stroke-width="1.2" />
+                    </g>
+
+                    <!-- Road deck -->
+                    <g class="bridge-layer bridge-deck">
+                        <rect x="50" y="310" width="900" height="20" fill="none" stroke="#D4A843" stroke-width="2.5" />
+                        <line x1="50" y1="320" x2="950" y2="320" stroke="#D4A843" stroke-width="1"
+                            stroke-dasharray="8,6" />
+                        <!-- Approach ramps -->
+                        <line x1="0" y1="350" x2="50" y2="310" stroke="#D4A843" stroke-width="2.5" />
+                        <line x1="950" y1="310" x2="1000" y2="350" stroke="#D4A843" stroke-width="2.5" />
+                    </g>
+
+                    <!-- Railings -->
+                    <g class="bridge-layer bridge-railings">
+                        <line x1="50" y1="305" x2="950" y2="305" stroke="#D4A843" stroke-width="1.5" />
+                        <line x1="50" y1="335" x2="950" y2="335" stroke="#D4A843" stroke-width="1.5" />
+                        <!-- railing posts -->
+                        <line x1="100" y1="305" x2="100" y2="310" stroke="#D4A843" stroke-width="1" />
+                        <line x1="150" y1="305" x2="150" y2="310" stroke="#D4A843" stroke-width="1" />
+                        <line x1="250" y1="305" x2="250" y2="310" stroke="#D4A843" stroke-width="1" />
+                        <line x1="350" y1="305" x2="350" y2="310" stroke="#D4A843" stroke-width="1" />
+                        <line x1="450" y1="305" x2="450" y2="310" stroke="#D4A843" stroke-width="1" />
+                        <line x1="550" y1="305" x2="550" y2="310" stroke="#D4A843" stroke-width="1" />
+                        <line x1="650" y1="305" x2="650" y2="310" stroke="#D4A843" stroke-width="1" />
+                        <line x1="750" y1="305" x2="750" y2="310" stroke="#D4A843" stroke-width="1" />
+                        <line x1="850" y1="305" x2="850" y2="310" stroke="#D4A843" stroke-width="1" />
+                        <line x1="100" y1="330" x2="100" y2="335" stroke="#D4A843" stroke-width="1" />
+                        <line x1="150" y1="330" x2="150" y2="335" stroke="#D4A843" stroke-width="1" />
+                        <line x1="250" y1="330" x2="250" y2="335" stroke="#D4A843" stroke-width="1" />
+                        <line x1="350" y1="330" x2="350" y2="335" stroke="#D4A843" stroke-width="1" />
+                        <line x1="450" y1="330" x2="450" y2="335" stroke="#D4A843" stroke-width="1" />
+                        <line x1="550" y1="330" x2="550" y2="335" stroke="#D4A843" stroke-width="1" />
+                        <line x1="650" y1="330" x2="650" y2="335" stroke="#D4A843" stroke-width="1" />
+                        <line x1="750" y1="330" x2="750" y2="335" stroke="#D4A843" stroke-width="1" />
+                        <line x1="850" y1="330" x2="850" y2="335" stroke="#D4A843" stroke-width="1" />
+                    </g>
+                </svg>
+                <!-- Phase labels overlaid on bridge -->
+                <div class="bridge__stages">
+                    <span class="bridge__stage" data-stage="1">01 — Фундамент</span>
+                    <span class="bridge__stage" data-stage="2">02 — Пилоны</span>
+                    <span class="bridge__stage" data-stage="3">03 — Тросы</span>
+                    <span class="bridge__stage" data-stage="4">04 — Подвесы</span>
+                    <span class="bridge__stage" data-stage="5">05 — Полотно</span>
+                    <span class="bridge__stage" data-stage="6">06 — Ограждения</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <p class="section-tag">ПОРТФОЛИО</p>
+            <h2 class="section-title">Реализованные объекты</h2>
+            <div class="projects__grid">
+                <div class="project-card" data-animate>
+                    <div class="project-card__img-wrap">
+                        <img src="img/bridge.png" alt="Мост через реку Обь" class="project-card__img"
+                            id="project-img-1">
+                    </div>
+                    <div class="project-card__info">
+                        <h3 class="project-card__name">Мост через р. Обь</h3>
+                        <p class="project-card__meta">Новосибирская область · 2023</p>
+                        <p class="project-card__desc">Автомобильный мост длиной 1.2 км. Четырехполосное движение,
+                            современные виброгасители.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-animate>
+                    <div class="project-card__img-wrap">
+                        <img src="img/residential.png" alt="Жилой комплекс Горизонт" class="project-card__img"
+                            id="project-img-2">
+                    </div>
+                    <div class="project-card__info">
+                        <h3 class="project-card__name">ЖК «Горизонт»</h3>
+                        <p class="project-card__meta">Москва · 2022</p>
+                        <p class="project-card__desc">Жилой комплекс бизнес-класса на 380 квартир. 25 этажей, подземный
+                            паркинг, ландшафтный двор.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-animate>
+                    <div class="project-card__img-wrap">
+                        <img src="img/interchange.png" alt="Транспортная развязка" class="project-card__img"
+                            id="project-img-3">
+                    </div>
+                    <div class="project-card__info">
+                        <h3 class="project-card__name">Транспортная развязка</h3>
+                        <p class="project-card__meta">Казань · 2024</p>
+                        <p class="project-card__desc">Многоуровневая транспортная развязка на пересечении двух
+                            федеральных трасс. Пропускная способность 40 000 авто/день.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-animate>
+                    <div class="project-card__img-wrap">
+                        <img src="img/industrial.png" alt="Промышленный комплекс" class="project-card__img"
+                            id="project-img-4">
+                    </div>
+                    <div class="project-card__info">
+                        <h3 class="project-card__name">Промкомплекс «Урал»</h3>
+                        <p class="project-card__meta">Екатеринбург · 2021</p>
+                        <p class="project-card__desc">Производственно-логистический комплекс площадью 48 000 м².
+                            Энергоэффективное здание класса A+.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__inner">
+                <div class="contact__info">
+                    <p class="section-tag">ОБРАТНАЯ СВЯЗЬ</p>
+                    <h2 class="section-title">Обсудим ваш<br>проект</h2>
+                    <p class="contact__desc">Оставьте заявку — наш инженер свяжется с вами в течение 24 часов для
+                        обсуждения деталей вашего проекта.</p>
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <span class="contact__detail-label">Телефон</span>
+                            <a href="tel:+78001234567" class="contact__detail-value">+7 (800) 123-45-67</a>
+                        </div>
+                        <div class="contact__detail">
+                            <span class="contact__detail-label">Email</span>
+                            <a href="mailto:info@stroymost.ru" class="contact__detail-value">info@stroymost.ru</a>
+                        </div>
+                        <div class="contact__detail">
+                            <span class="contact__detail-label">Адрес</span>
+                            <span class="contact__detail-value">Москва, ул. Строителей, 42</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact__form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="form-name" class="form-input" placeholder=" " required>
+                        <label for="form-name" class="form-label">Ваше имя</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="form-phone" class="form-input" placeholder=" " required>
+                        <label for="form-phone" class="form-label">Телефон</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="form-email" class="form-input" placeholder=" ">
+                        <label for="form-email" class="form-label">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="form-message" class="form-input form-textarea" placeholder=" "
+                            rows="4"></textarea>
+                        <label for="form-message" class="form-label">Сообщение</label>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <span class="footer__logo">СТРОЙМОСТ</span>
+                    <p class="footer__copy">© 2009–2026 ООО «СтройМост».<br>Все права защищены.</p>
+                </div>
+                <div class="footer__links">
+                    <a href="#advantages">Преимущества</a>
+                    <a href="#bridge">Процесс</a>
+                    <a href="#projects">Объекты</a>
+                    <a href="#contact">Контакты</a>
+                </div>
+                <div class="footer__social">
+                    <a href="#" aria-label="Telegram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M11.944 0A12 12 0 1 0 24 12.056A12.013 12.013 0 0 0 11.944 0Zm5.091 8.23l-1.727 8.18a.913.913 0 0 1-1.376.536l-3.016-2.198l-1.456 1.4a.626.626 0 0 1-.594.166l.21-3.012l5.56-5.023c.241-.218-.054-.339-.375-.121l-6.871 4.326l-2.962-.924c-.643-.204-.656-.643.134-.953l11.566-4.458a.536.536 0 0 1 .707.48Z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="VKontakte">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.862-.525-2.049-1.714-1.033-1.01-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.136.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4 8.866 4 8.356c0-.254.102-.49.593-.49h1.744c.441 0 .61.203.78.678.847 2.49 2.286 4.675 2.879 4.675.22 0 .322-.102.322-.66V10.5c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.373 0 .508.204.508.644v3.473c0 .373.17.508.271.508.22 0 .407-.135.813-.542 1.253-1.406 2.15-3.574 2.15-3.574.119-.254.305-.49.746-.49h1.744c.525 0 .644.27.525.644-.22 1.017-2.354 4.031-2.354 4.031-.187.305-.254.44 0 .78.186.254.796.78 1.202 1.253.746.864 1.321 1.59 1.473 2.084.17.49-.085.744-.576.744z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
